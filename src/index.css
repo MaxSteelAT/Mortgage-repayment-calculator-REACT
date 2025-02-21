@@ -5,13 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:hsl(202, 86%, 94%);
+  background-color: hsl(202, 86%, 94%);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-/*
 
+  /*
   color:hsl(61, 70%, 52%);
   color:hsl(4, 69%, 50%);
   color:hsl(0, 0%, 100%);
@@ -26,4 +26,97 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  border-style: dotted;
+  border-radius: 30px;
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header {
+  display: flex;
+  color: hsl(202, 55%, 16%);
+  margin-top: 10px;
+}
+
+.title {
+  color: hsl(202, 55%, 16%);
+  font-size: 30px;
+}
+.clear {
+  flex-direction: column;
+  align-content: space-around;
+  margin-left: 65px;
+  color: hsl(200, 24%, 40%);
+}
+
+.form-container {
+  width: 50%;
+  padding: 40px;
+}
+
+.results-shows {
+  width: 50%;
+  background-color: hsl(202, 55%, 16%);
+  color: aliceblue;
+  border-radius: 0 30px 30px 90px;
+}
+
+label {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: -5px;
+  color:hsl(200, 24%, 40%);
+}
+
+.input-group {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.input-group:hover {
+  color: blue;
+}
+
+.form-check {
+  color: hsl(202, 55%, 16%);
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.form-check-label {
+  padding-left: 15px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label
+label.form-check-label{
+  opacity: 2.5;
+}
+
+span.input-group-text {
+  background-color: hsl(202, 86%, 94%);
+}
+
+.btn-primary {
+  width: 65%;
+  border-radius: 20px;
+  border-style: none;
+  background-color: hsl(61, 70%, 52%);
+  margin-top: 30px;
+  height: 45px;
+  color: hsl(202, 55%, 16%);
+  font-weight: 700;
 }
