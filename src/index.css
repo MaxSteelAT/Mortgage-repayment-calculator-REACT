@@ -30,8 +30,8 @@ code {
 
 .App {
   border-radius: 30px;
-  width: 1000px;
-  height: 600px;
+  max-width: 1000px;
+  min-height: 600px;
   display: flex;
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -197,7 +197,7 @@ p.text {
   margin-right: 30px;
 }
 
-h2.results{
+h2.results {
   font-size: 22px;
 }
 
@@ -216,4 +216,36 @@ span.sterling.repayments {
   border-width: 0 0 1px 0;
   border-color: hsl(202.29deg 25.93% 26.47%);
   height: 120px;
+}
+
+.input-error {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .App {
+    display: block;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .results-shows{
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
+  .your-result{
+    width: 100%;
+    border-radius: 0;
+  }
 }
