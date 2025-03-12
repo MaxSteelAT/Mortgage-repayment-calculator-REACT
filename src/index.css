@@ -29,12 +29,12 @@ code {
 }
 
 .App {
-  border-style: dotted;
   border-radius: 30px;
   width: 1000px;
   height: 600px;
   display: flex;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header {
@@ -47,6 +47,7 @@ code {
   color: hsl(202, 55%, 16%);
   font-size: 30px;
 }
+
 .clear {
   flex-direction: column;
   align-content: space-around;
@@ -70,23 +71,34 @@ label {
   display: flex;
   margin-top: 20px;
   margin-bottom: -5px;
-  color:hsl(200, 24%, 40%);
+  color: hsl(200, 24%, 40%);
 }
 
 .input-group {
   margin-top: 15px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.input-group:hover {
-  color: blue;
+.input-group-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(203, 41%, 72%);
+}
+
+.input-group-border:hover {
+  border-color: hsl(61, 70%, 52%);
+}
+
+span.input-group-text:hover {
+  background-color: hsl(61, 70%, 52%);
 }
 
 .form-check {
   color: hsl(202, 55%, 16%);
   font-weight: 700;
   border: 1px solid #ccc;
-  border-radius: 5px; 
+  border-radius: 5px;
   display: flex;
   align-items: center;
   padding-left: 40px;
@@ -101,8 +113,8 @@ label {
   height: 45px;
 }
 
-.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label
-label.form-check-label{
+.form-check-input:disabled~.form-check-label,
+.form-check-input[disabled]~.form-check-label label.form-check-label {
   opacity: 2.5;
 }
 
@@ -119,4 +131,89 @@ span.input-group-text {
   height: 45px;
   color: hsl(202, 55%, 16%);
   font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: hsl(61deg 70% 52% / 74%);
+  color: hsl(202, 55%, 16%);
+}
+
+.results-shows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  text-align: center;
+  margin: 0 50px;
+  color: hsl(203, 41%, 72%);
+}
+
+.input-group>.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.your-result {
+  padding: 50px;
+  width: 50%;
+  background-color: hsl(202, 55%, 16%);
+  color: aliceblue;
+  border-radius: 0 30px 30px 90px;
+}
+
+.text {
+  color: #718a97;
+  font-size: 16px;
+}
+
+p.text {
+  margin-bottom: 50px;
+}
+
+.sterling {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.result-information {
+  background-color: #0e2431;
+  border-radius: 10px;
+  height: 260px;
+  border-style: solid;
+  border-width: 5px 0 0 0;
+  border-color: hsl(61, 70%, 52%);
+}
+
+.ticket {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h2.results{
+  font-size: 22px;
+}
+
+h4.text {
+  margin-top: 25px;
+}
+
+span.sterling.repayments {
+  font-size: 55px;
+  color: hsl(61, 70%, 52%);
+  margin-bottom: 20px;
+}
+
+.ticket.monthly {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: hsl(202.29deg 25.93% 26.47%);
+  height: 120px;
 }
